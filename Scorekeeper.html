@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equi="X-UA_Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">;
+    <title>SCORE KEEPER</title>
+
+
+    <!--Bulma css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .winner {
+            color:green;
+        }
+
+        .looser {
+            color:red;
+        }
+    </style>
+    
+</head>
+
+<body bgcolor="#D79922">
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quater">
+                    <div class="card">
+                        <div class="class-image">
+                            <figure class="image is-2by1">
+                              <img src="https://www.baltic.travel/uploads/2021/08/Return_of_Sports.jpg"> 
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                            SCORE KEEPER
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                            <p class="subtitle">use the buttons to keep the score</p>
+                            <label for="playto" class="label is-large is-inline">Piaying To</label>
+                            <div class="select is rounded">
+                                <select name="" id="playto">
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <button id="p1Button" class="is-success button card-footer-item">+1 Player One</button>
+                        <button id="p2Button" class="is-info button card-footer-item">+1 Player Two</button>
+                        <button id="reset" class="is-danger button card-footer-item" >Reset</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="score keeper.js"></script>
+</body>
+
+</html>
